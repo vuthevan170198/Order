@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "b93ca8ba-c598-433a-b968-3b9f25b7f7c5",
+		"name": "Orderdb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31514554"
+	},
+	"item": [
+		{
+			"name": "Crearte Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 1,\r\n    \"totalAmount\": 1300,\r\n    \"quantity\": 1,\r\n    \"paymentMode\": \"CASH\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/order/placeOrder",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order",
+						"placeOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
